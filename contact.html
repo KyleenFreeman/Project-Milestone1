@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> <!--Elements that are not visable on the website-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestone 1: My Website: Contact</title>
+    <link rel="stylesheet" href="contact.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+
+<!--Anything that physically appears on website-->
+  <body> 
+   <!--Navigation bar to get between the multiple pages-->
+    <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+   </nav>
+    <section class="contact-box">
+      <div class="contact-info">
+        <h1>
+          Contact me at:
+        </h1>
+        <p>Email: Kfreem79@students.kennesaw.edu or 
+          Kyleenfreeman23@gmail.com
+        </p>
+        <p>
+          Phone: 706-905-5174
+        </p>
+        <p>
+          Instagram: @Kyleenfreeman
+        </p>
+        <p id="p_id">Intrested in hiring me? or Want me to contact you? </p>
+
+        <label for="">Email</label>
+        <input type="radio" name="course" id="IT_id" oneclick="document.getElementById('p_id').style.backgroundColor='red'">
+      
+        <label for="">Text</label>
+        <input type="radio" name="course" id="CS_id" oneclick="document.getElementById('p_id').style.fontSize='50px'">
+  
+        <br>
+        <label for="">Enter your information -</label>
+        <input type="text" name="" id="name_id">
+
+        <button onclick="test1()">Submit</button>
+
+        <p id="p_name"></p>
+      </div>
+    </section>
+  </body>
+</html>
