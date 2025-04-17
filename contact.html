@@ -52,4 +52,114 @@
       </div>
     </section>
   </body>
+<!DOCTYPE html>
+<html lang="en">
+  <head> <!--Elements that are not visable on the website-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestone 1: My Website: Contact</title>
+    <link rel="stylesheet" href="contact.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+
+<!--Anything that physically appears on website-->
+  <body> 
+    <style>
+      /* all over styling */
+body {
+  background-color: #DAE7F6;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+/* Navigation Bar */
+.navbar{
+  padding: 10px 0;
+}
+
+
+.nav-links{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+  transition: text-decoration 0.3s ease-in-out;
+}
+
+
+.nav-links a:hover {
+  opacity: 0.5;
+  border-radius: 5px;
+  text-decoration: underline;
+}
+
+
+/* Info Box Below Navbar */
+.contact-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  border: 2px solid #333;  /* Outline the box */
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+</style>
+
+   <!--Navigation bar to get between the multiple pages-->
+    <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+   </nav>
+    <section class="contact-box">
+      <div class="contact-info">
+        <h1>
+          Contact me at:
+        </h1>
+        <p>Email: Kfreem79@students.kennesaw.edu or 
+          Kyleenfreeman23@gmail.com
+        </p>
+        <p>
+          Phone: 706-905-5174
+        </p>
+        <p>
+          Instagram: @Kyleenfreeman
+        </p>
+        <p id="p_id">Intrested in hiring me? or Want me to contact you? </p>
+
+        <form id="contact-form">
+          <label for="username">Contact info:</label>
+          <input type="text" id="username" name="username" required>
+          <button type="submit">Submit</button>
+      </form>
+
+        <p id="p_name"></p>
+      </div>
+    </section>
+    <script src="website.js"></script>
+  </body>
 </html>
